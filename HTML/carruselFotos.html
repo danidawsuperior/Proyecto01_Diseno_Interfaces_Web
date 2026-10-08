@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Manual</title>
+    <script>
+        let cuenta = 0;
+        let fotos = ["Imagenes/Aula1.0.png", "Imagenes/Aula1.1.png", 
+        "Imagenes/Aula2.0.png", "Imagenes/Coworking.png", "Imagenes/Entrada0.png",
+        "Imagenes/Entrada1.png", "Imagenes/Entrada2.png", "Imagenes/Entrada3.png", 
+        "Imagenes/Hall.png", "Imagenes/Salon de actos.png"];
+        function pasarFoto(){
+            cuenta ++
+            if(cuenta >= fotos.length){
+                cuenta = 0;
+            }
+            document.getElementsByTagName("img")[0].src = fotos[cuenta];
+           
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Carrusel de fotos manual</h2>
+    <img src="Imagenes/Entrada1.png" height="500px" width="800px"><br><br>
+    <input type="button" value="PASAR IMAGEN" onclick="pasarFoto()">
+</body>
+</html>
