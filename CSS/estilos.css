@@ -1,22 +1,57 @@
-header{
-    align-content: center;
-    text-align: center;
-}
-nav {
-    background-color: rgb(255, 255, 255);
-    text-align:center;
-    padding: 10px;
-}
+ /*Configuramos los dos tipos de fuentes que vamos a utilizar*/
+ /*Esta va a ser la fuente regular, la que parecerá en todo el documento*/
+ @font-face {
+     font-family: 'FuenteMontserrat';
+     src: url('../Fuentes/Montserrat-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+ /*Esta va a ser la fuente bold, la que aparezaca en los títulos*/
+ @font-face {
+     font-family: 'FuenteMontserratBold';
+     src: url('../Fuentes/Montserrat-Bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
 
-nav li {
-    display: inline;
-    margin: 0 15px;
-    margin-bottom: 30px;
-}
+ /* Esto se aplicará a todo el texto */
+ body {
+     font-family: 'FuenteMontserrat', sans-serif;
+     font-weight: normal;
+ }
 
+ /* Esto lo aplicaremos solo a los títulos */
+ h1 {
+     font-family: 'FuenteMontserratBold', sans-serif;
+     font-weight: bold;
+ }
+
+ /* Esto lo aplicaremos solo a los títulos */
+ h2 {
+     font-family: 'FuenteMontserratBold', sans-serif;
+     font-weight: bold;
+ }
+
+ header {
+     align-content: center;
+     text-align: center;
+ }
+
+ nav {
+     background-color: rgb(255, 255, 255);
+     text-align: center;
+     padding: 10px;
+ }
+
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav li {
+     display: inline;
+     margin: 0 15px;
+     margin-bottom: 30px;
+ }
