@@ -47,7 +47,7 @@
      margin-right: 2.7%;
  }
 
-
+/*Modificacmos el body*/
  body {
      background-color: #043c6f;
      margin: 1%;
@@ -55,7 +55,7 @@
      text-align: justify;
  }
 
-
+/*Zona de navegación*/
  nav {
      background-color: #bacbf2;
      text-align: center;
@@ -120,6 +120,7 @@
      text-decoration: underline;
  }
 
+/*Modificacion y colocación sobre las imagenes del carrusel*/
  .carrusel-contenedor {
      display: flex;
      justify-content: center;
@@ -128,6 +129,7 @@
      margin-top: 20px;
  }
 
+ /*Colocamos el resto de imagenes, desde la del mapa hasta la de los módulos de DAW*/
  .mapa-distrito {
      float: right;
      width: 433px;
@@ -194,6 +196,22 @@
     grid-column: span 2;
  }
 
+ /*Vamos a darle estilo a los enlace para subir a la parte de arriba*/
+.boton-subir{
+    display: inline-block;
+    border: 2px solid #999999;
+    padding: 6px 12px;
+    grid-column: span 2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.boton-subir:hover, .pasarFoto:hover {
+    background-color: #c9c9c9;
+    cursor: pointer;
+}
+
+ /*Zona del pie de página*/
  footer {
      background-color: #d9d9d9b3;
      color: black;
