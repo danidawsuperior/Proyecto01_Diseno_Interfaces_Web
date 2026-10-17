@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información del centro</title>
-    <link rel="icon" href="../Imagenes/Favicono sin fondo/favicon-32x32.png">
+    <link rel="icon" href="../Imagenes/Favicono-sin-fondo/favicon-32x32.png">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 
@@ -14,7 +14,7 @@
         <h1>IES TETUÁN DE LAS VICTORIAS</h1>
         <p>Bienvenidos a la página sobre el IES Tetuán de las Victorias</p>
         <!--Realizamos un enlace a la imagen del centro y a la nueva página web-->
-        <img src="../Imagenes/logo-IES-Tetuan.png" width="" height=""><br>
+        <img src="../Imagenes/logo-IES-Tetuan.png" width="200" height="60"><br>
         <!--target="_blank" esto hace que se habran los enlaces en una nueva ventana-->
         <a href="https://new.iestetuan.es/" target="_blank">Enlace a la página del centro</a>
         <br><br>
@@ -30,9 +30,15 @@
     </nav>
 
     <main>
-        <section id="informacion-centro">
+        <section id="historia-centro">
             <!--Hablar sobre el centro-->
             <h4>Historia del IES Tetuán de las Victorias</h4>
+
+            <!--Posicionamos la imagen en un buen lugar para que al poner el estilo que de en el lugar que queremos-->
+            <div class="primer-instituto">
+                <img src="../Imagenes/primer-instituto.png" width="239" height="178">
+            </div>
+
             <p>
                 El 13 de octubre de 1933 se inauguró como Escuela de Orientación Profesional y Aprendizaje Chamartín de
                 la Rosa,
@@ -42,11 +48,17 @@
                 que se encontraba, debido a que el
                 municipio de Chamartín de la Rosa había desaparecido, incorporándose a Madrid en 1948.
             </p>
-            <img src="../Imagenes/primer-instituto.png">
             <p><a href="#inicio">Ir a la parte de arriba</a></p>
-
+        </section>
+        <section id="direccion-centro">
+        
             <!--Ubicación-->
             <h4>Dirección</h4>
+
+            <div class="mapa-distrito">
+                <img src="../Imagenes/Mapa-distrito-tetuan-de-las-victorias.png" width="433" height="205">
+            </div>
+
             <p>
                 El instituto de formación profesional Tetuán de las Victorias se encuentra en Madrid, está bastante bien
                 comunicado, ya que se puede llegar en coche
@@ -68,9 +80,10 @@
                 Integral del Distrito Tetuán de la Policía Municipal de Madrid. El instituto se encuentra bastante cerca
                 de las 4 Torres de Madrid, a unos 15/20 minutos andando.
             </p>
-            <img src="../Imagenes/Mapa-distrito-tetuan-de-las-victorias.png" width="700px" height="400px">
+           
             <p><a href="#inicio">Ir a la parte de arriba</a></p>
-
+        </section>
+        <section id="instalaciones-centro">
             <!--Instalaciones-->
             <h4>Instalaciones del centro</h4>
             <p>
@@ -100,13 +113,14 @@
                 parking donde los alumnos y
                 los profesores pueden aparcar los vehículos.
             </p>
+
             <div class="carrusel-contenedor">
-                <img id="foto-carrusel" src="../Imagenes/Entrada0.png" height="500px" width="800px"><br><br>
-                <input type="button" value="PASAR IMAGEN" onclick="pasarFoto()">
+                <img id="foto-carrusel" src="../Imagenes/Entrada0.png" width="500" height="300"><br><br>
             </div>
+
+            <input type="button" value="PASAR IMAGEN" onclick="pasarFoto()">
+
             <p><a href="#inicio">Ir a la parte de arriba</a></p>
-
-
         </section>
         <script src="../JS/carruselFotos.js" defer></script>
     </main>

@@ -33,15 +33,37 @@
      font-weight: bold;
  }
 
+ /* Vamos a modificar el header */
  header {
+     background-color: #bacbf2;
+     color: rgb(0, 0, 0);
+     font-style: italic;
      align-content: center;
      text-align: center;
+     padding: 0;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     margin-left: 2.7%;
+     margin-right: 2.7%;
  }
 
+
+ body {
+     background-color: #043c6f;
+     margin: 1%;
+     padding: 0;
+     text-align: justify;
+ }
+
+
  nav {
-     background-color: rgb(255, 255, 255);
+     background-color: #bacbf2;
      text-align: center;
      padding: 10px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     margin-left: 2.7%;
+     margin-right: 2.7%;
  }
 
  nav ul {
@@ -54,4 +76,131 @@
      display: inline;
      margin: 0 15px;
      margin-bottom: 30px;
+ }
+
+ nav a {
+     color: black;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ nav a:hover {
+     text-decoration: underline;
+ }
+
+
+
+ section li {
+     margin-bottom: 10px;
+ }
+
+ main {
+     padding: 50px;
+ }
+
+ section {
+     background-color: #e0e0e0;
+     border-radius: 20px;
+     padding: 15px;
+     margin-bottom: 20px;
+     text-align: justify;
+
+ }
+
+ section p {
+     text-align: justify;
+ }
+
+ section a {
+     color: black;
+     text-decoration: none;
+ }
+
+ section a:hover {
+     text-decoration: underline;
+ }
+
+ .carrusel-contenedor {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin-top: 20px;
+ }
+
+ .mapa-distrito {
+     float: right;
+     width: 433px;
+     max-width: 100%;
+     margin-left: 20px;
+     margin-right: 10px;
+     margin-top: -1%;
+ }
+
+ .primer-instituto {
+     float: right;
+     width: 239px;
+     max-width: 100%;
+     margin-left: 20px;
+     margin-right: 10px;
+     margin-top: -4%;
+ }
+
+ .favicono {
+     float: left;
+     width: 239px;
+     max-width: 100%;
+     margin-left: 10px;
+     margin-right: 20px;
+     margin-top: 0%;
+ }
+
+ .carrusel-contenedor img,
+ .mapa-distrito img,
+ .primer-instituto img,
+ .favicono img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ input[type="button"] {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 15px;
+ }
+
+ .informacion-asignaturas {
+     margin: 0;
+ }
+
+ .informacion-asignaturas img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ #informacion-estudios-centro {
+    display: grid;
+    grid-template-columns: minmax(200px, 285px) 1fr;
+    column-gap: 25px;
+    row-gap: 20px;
+    align-items: start;
+ }
+
+ #informacion-estudios-centro h4,
+ #informacion-estudios-centro p {
+    grid-column: span 2;
+ }
+
+ footer {
+     background-color: #d9d9d9b3;
+     color: black;
+     text-align: center;
+     padding: 5px;
+     border-radius: 20px;
+     margin-left: 2.7%;
+     margin-right: 2.7%;
+
  }
