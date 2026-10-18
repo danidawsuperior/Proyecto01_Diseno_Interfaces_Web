@@ -28,9 +28,15 @@
  }
 
  /* Esto lo aplicaremos solo a los títulos */
- h2 {
+ h4 {
      font-family: 'FuenteMontserratBold', sans-serif;
      font-weight: bold;
+ }
+
+ footer {
+    font-family: 'FuenteMontserrat', sans-serif;
+    font-style:italic;
+    font-weight: normal;
  }
 
  /* Vamos a modificar el header */
